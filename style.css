@@ -116,30 +116,16 @@ h1 {
 /*image*/
 
 
-.imageExample {
-    width: 40%;
-    height: 300px;
-    border-radius: 10px;
-}
-.button a{
+
+.button_waterpump{
     text-decoration: none;
     color: #ecf0f1;
     background-color: #cc1313;
     border-radius: 5px;
-    width: 100px;
     padding: 5px 10px;
-    margin:5px;
   }
 
-.indicator {
-    padding-top: .5%;
-    padding-bottom: 3%;
-}
 
-
-#preview {
-    padding-bottom: 3%;
-}
 /*pulau komodo*/
 .komodo {
     text-align: center;
@@ -161,20 +147,7 @@ h1 {
     background-size: cover;
 }
 
-.imageExample2 {
-    width: 40%;
-    height: 300px;
-    border-radius: 10px;
-}
 
-.indicator {
-    padding-top: .5%;
-    padding-bottom: 3%;
-}
-
-#preview {
-    padding-bottom: 3%;
-}
 /*raja ampat*/
 .raja {
     text-align: center;
@@ -196,20 +169,7 @@ h1 {
     background-size: cover;
 }
 
-.imageExample3 {
-    width: 40%;
-    height: 300px;
-    border-radius: 10px;
-}
 
-.indicator {
-    padding-top: .5%;
-    padding-bottom: 3%;
-}
-
-#preview {
-    padding-bottom: 3%;
-}
 /*borobudur*/
 .candi {
     text-align: center;
@@ -231,20 +191,6 @@ h1 {
     background-size: cover;
 }
 
-.imageExample4 {
-    width: 40%;
-    height: 300px;
-    border-radius: 10px;
-}
-
-.indicator {
-    padding-top: .5%;
-    padding-bottom: 3%;
-}
-
-#preview {
-    padding-bottom: 3%;
-}
 /*bromo*/
 .bromo {
     text-align: center;
@@ -266,21 +212,6 @@ h1 {
     background-size: cover;
 }
 
-
-.imageExample5 {
-    width: 40%;
-    height: 300px;
-    border-radius: 10px;
-}
-
-.indicator {
-    padding-top: .5%;
-    padding-bottom: 3%;
-}
-
-#preview {
-    padding-bottom: 3%;
-}
 /*pencarian*/
 .imageExample6 {
     width: 240px;
@@ -296,3 +227,133 @@ h1 {
 #preview {
     padding-bottom: 3%;
 }
+.slider{
+    width: 300px;
+    height: 200px;
+    margin-left: 520px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 300px;
+    height: 200px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -320px;
+    margin-left: -250px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 180px;
+    margin-left: -250px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+  .gabung{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+  }
+  .next img{
+    margin-top: -100px;
+    margin-left: 800px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .prev img{
+    margin-top: -100px;
+    margin-left: -1250px;
+    width: 100ox;
+    height: 100px;
+  }
+                             
